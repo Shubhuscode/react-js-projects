@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  
+  <h1>Shubham Ghaturel</h1>
+  <h2>Description:</h2>
+  <p>
+    This HTML document showcases a simple implementation of object-oriented programming in JavaScript through the creation of a class named <code>Car</code>. The <code>Car</code> class features a constructor that sets the car's brand and a method to return a message displaying the car's brand. Additionally, a subclass named <code>Model</code> extends the <code>Car</code> class, adding a model attribute and a method to present both the brand and model of the car. Upon loading the page, an instance of the <code>Model</code> class is created with the brand "Ford" and model "Mustang", and the message "I have a Ford, it is a Mustang" is displayed on the webpage. This example effectively illustrates fundamental concepts of object-oriented programming in JavaScript within an HTML environment.
+  </p>
+  
+  <h2>Output:</h2>
+  
+<script>
+class Car {
+  constructor(name) {
+    this.brand = name;
+  }
+
+  present() {
+    return 'I have a ' + this.brand;
+  }
+}
+
+class Model extends Car {
+  constructor(name, mod) {
+    super(name);
+    this.model = mod;
+  }  
+  show() {
+    return this.present() + ', it is a ' + this.model
+  }
+}
+
+const mycar = new Model("Ford", "Mustang");
+document.write(mycar.show());
+</script>
+
+</body>
+</html>

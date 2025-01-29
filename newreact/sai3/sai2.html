@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>Shubham Ghaturle</h1>
+  <p>Description:-create simple calculate funtion accepting two arguments.perform some oprations on arguments like add ,subtract,multiply,devide return in array.display the  output on user screen using document.write( )
+  </p>
+  
+<script>
+function calculate(a, b) {
+  const add = a + b;
+  const subtract = a - b;
+  const multiply = a * b;
+  const divide = a / b;
+
+  return [add, subtract, multiply, divide];
+}
+
+const [add,subtract,multiply, divide] = calculate(4, 7);
+
+document.write("<p>Sum: " + add + "</p>");
+document.write("<p>Difference " + subtract + "</p>");
+document.write("<p>Product: " + multiply + "</p>");
+document.write("<p>Quotient " + divide + "</p>");
+</script>
+
+</body>
+</html>
+
+

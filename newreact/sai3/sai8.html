@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>Shubham Ghaturle</h1>
+  <p>Description: - Create two object with key value pair and join them using spread oprator and crete new arry is displayusing console.log on user screen.</p>
+
+
+
+<script>
+const myVehicle = {
+  brand: 'Ford',
+  model: 'Mustang',
+  color: 'red'
+}
+
+const updateMyVehicle = {
+  type: 'car',
+  year: 2021, 
+  color: 'yellow'
+}
+
+const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
+
+//Check the result object in the console:
+console.log(myUpdatedVehicle);
+</script>
+
+<p>Press F12 and see the result object in the console view.</p>
+
+</body>
+</html>
+The new members are added wheras existing members are updated

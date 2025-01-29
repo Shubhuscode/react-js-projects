@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Car Example</title>
+</head>
+
+<body>
+  <h1>Shubham Ghaturel</h1>
+  <h2>Description:</h2>
+  <p>
+    Inside the class, the constructor(name) method is defined, which is a special method for creating and initializing objects created with the class. It takes one parameter, name. 
+    <br>
+    <code>this.brand = name;</code> assigns the value of the name parameter to the brand property of the Car instance. 
+    <br>
+    <code>const mycar = new Car("Ford");</code> creates a new instance of the Car class named mycar, passing the string "Ford" as the argument to the constructor. This means <code>mycar.brand</code> will now hold the value "Ford". 
+    <br>
+    <code>document.write(mycar.brand);</code> writes the value of <code>mycar.brand</code> (which is "Ford") directly to the HTML document. This will display "Ford" on the webpage.
+  </p>
+  
+  <h2>Output:</h2>
+  <script>
+    class Car {
+      constructor(name) {
+        this.brand = name;
+      }
+    }
+
+    const mycar = new Car("Ford");
+    document.write(mycar.brand);
+  </script>
+
+</body>
+</html>

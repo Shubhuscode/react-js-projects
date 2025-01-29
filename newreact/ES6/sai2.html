@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <h1>Shubham Ghaturel</h1>
+  <h2>Description:</h2>
+  <p>
+    This HTML document demonstrates the creation of a simple JavaScript class named Car. The class includes a constructor that initializes the car's brand and a method to present the car's brand. When the page is loaded, it instantiates a Car object with the brand "Ford" and displays the message "I have a Ford" on the webpage. This example illustrates basic object-oriented programming concepts in JavaScript within an HTML context.
+  </p>
+  
+  <h2>Output:</h2>
+  
+<script>
+class Car {
+  constructor(name) {
+    this.brand = name;
+  }
+
+  present() {
+    return 'I have a ' + this.brand;
+  }
+}
+
+const mycar = new Car("Ford");
+document.write(mycar.present());
+</script>
+
+</body>
+</html>

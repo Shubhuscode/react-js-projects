@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <h1>Shubham Ghaturle</h1>
+  <p>Description:-create simple vehicleOne object is pass as argument to the myVehicle function.myVehicle funtion return message this mesage is display on user screen using document.write( )
+  </p>
+<p id="demo"></p>
+  
+<script>
+const vehicleOne = {
+  brand: 'Ford',
+  model: 'Mustang',
+  type: 'car',
+  year: 2021, 
+  color: 'red'
+}
+
+myVehicle(vehicleOne);
+
+// old way
+function myVehicle(vehicle) {
+  const message = 'My ' + vehicle.type + ' is a ' + vehicle.color + ' ' + vehicle.brand + ' ' + vehicle.model + '.';
+  document.getElementById("demo").innerHTML = message;
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>Shubham Ghaturle</h1>
+  <p>Description:-create simple vehicleOne object inside crete one more registration object is pass the perticular keys  as argument to the myVehicle function.myVehicle funtion return message this mesage is display on user screen using document.write( )
+  </p>
+
+<p id="demo"></p>
+  
+<script>
+const vehicleOne = {
+  brand: 'Ford',
+  model: 'Mustang',
+  type: 'car',
+  year: 2021, 
+  color: 'red',
+  registration: {
+    city: 'Houston',
+    state: 'Texas',
+    country: 'USA'
+  }
+}
+
+myVehicle(vehicleOne)
+
+function myVehicle({ model, registration: { state } }) {
+  const message = 'My ' + model + ' is registered in ' + state + '.';
+
+  document.getElementById("demo").innerHTML = message;
+}
+</script>
+
+</body>
+</html>

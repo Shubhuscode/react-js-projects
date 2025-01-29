@@ -1,0 +1,23 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Football() {
+  const shoot = (a, b) => {
+    alert(b.type);
+    /*
+    'b' represents the React event that triggered the function.
+    In this case, the 'click' event
+    */
+  }
+
+  return (
+    <>
+      <h1>Shubham Ghaturle</h1>
+      <p>This component renders a simple football-themed interface. The 'shoot' function is called when the button is clicked, alerting the type of event that occurred. This demonstrates how to handle events in React and access event details.</p>
+      <button onClick={(event) => shoot("Goal!", event)}>Take the shot!</button>
+    </>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Football />);

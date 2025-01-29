@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Shubham Ghaturle</h1>
+    <p>Description: - Export the name and age from person.js file and import into current file and disply the output on user screen  </p>
+  
+  
+<p id="demo"></p>
+
+<script type="module">
+import { name, age } from "./person.js";
+
+document.getElementById("demo").innerHTML = "My name is " + name;
+document.getElementById("demo").innerHTML += ", I am " + age + ".";
+
+</script>
+
+</body>
+</html>
